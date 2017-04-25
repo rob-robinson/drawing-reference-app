@@ -24,11 +24,15 @@ git clone https://github.com/rob-robinson/flask-docker.git
 
 cd flask-docker
 
-docker build -t flask-try . 
-docker run -d -p 5000:5000 flask-try
+# stop and remove all previous containers ( know what these mean before running them ):
+docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
+
+# build and run container:
+docker build -t flask-try . && docker run -d -p 5000:5000 flask-try
 
 curl http://localhost:5000/
-curl http://localhost:5000/all
+curl http://localhost:5000/jwt
+curl http://localhost:5000/all/<jwt_token>
 curl http://localhost:5000/tag/aladdin
 curl http://localhost:5000/tag/moana
 curl http://localhost:5000/tag/classic
