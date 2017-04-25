@@ -11,6 +11,12 @@ Not production ready !
 
 This is a foundation for having a python rest api available on your local machine
 
+setup_db.sh is available to create a mysql user, schema, and demo data.
+
+add your mysql login information to the app/config.py file.
+
+the database must not be located in the same container as the app.
+
 
 ```
 
