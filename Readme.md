@@ -23,7 +23,8 @@ docker run -d -p 5000:5000 flask-try
 
 curl http://localhost:5000/
 curl http://localhost:5000/all
-curl http://localhost:5000/hi
-curl http://localhost:5000/user/myusername
+curl http://localhost:5000/tag/aladdin
+curl http://localhost:5000/tag/moana
+curl http://localhost:5000/tag/classic
 
 ```
