@@ -28,7 +28,7 @@ chmod 770 start-app.sh
 
 ./start-app.sh
 
-curl [http://localhost/](http://localhost/)
+curl http://localhost/
 curl http://localhost/jwt
 curl http://localhost/all/<jwt_token>
 curl http://localhost/tag/aladdin
@@ -36,3 +36,6 @@ curl http://localhost/tag/moana
 curl http://localhost/tag/classic
 
 ```
+
+- [http://localhost/tag/aladdin](http://localhost/tag/aladdin)
+- [http://localhost/tag/moana](http://localhost/tag/moana)
