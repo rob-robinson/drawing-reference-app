@@ -22,19 +22,17 @@ the database must not be located in the same container as the app.
 
 git clone https://github.com/rob-robinson/flask-docker.git
 
-cd flask-docker
+cd flask-docker/deployment
 
-# stop and remove all previous containers ( know what these mean before running them ):
-docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
+chmod 770 start-app.sh
 
-# build and run container:
-docker build -t flask-try . && docker run -d -p 5000:5000 flask-try
+./start-app.sh
 
-curl http://localhost:5000/
-curl http://localhost:5000/jwt
-curl http://localhost:5000/all/<jwt_token>
-curl http://localhost:5000/tag/aladdin
-curl http://localhost:5000/tag/moana
-curl http://localhost:5000/tag/classic
+curl [http://localhost/](http://localhost/)
+curl http://localhost/jwt
+curl http://localhost/all/<jwt_token>
+curl http://localhost/tag/aladdin
+curl http://localhost/tag/moana
+curl http://localhost/tag/classic
 
 ```
