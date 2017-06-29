@@ -7,16 +7,9 @@ Fun local flask api starting point using:
  * MySQL
 
 
-Not production ready !
+For demonstration purposes only :
 
-This is a foundation for having a python rest api available on your local machine
-
-setup_db.sh is available to create a mysql user, schema, and demo data.
-
-add your mysql login information to the app/config.py file.
-
-the database must not be located in the same container as the app.
-
+To get a working demo on your desktop, perform the following steps:
 
 ```
 
@@ -24,9 +17,13 @@ git clone https://github.com/rob-robinson/flask-docker.git
 
 cd flask-docker/deployment
 
-chmod 770 start-app.sh
+chmod 770 start-service.sh
+chmod 770 stop-service.sh
 
-./start-app.sh
+# start image search service
+./start-service.sh
+
+# some of the data that is available...
 
 curl http://localhost/
 curl http://localhost/jwt
@@ -34,6 +31,10 @@ curl http://localhost/all/<jwt_token>
 curl http://localhost/tag/aladdin
 curl http://localhost/tag/moana
 curl http://localhost/tag/classic
+
+# stop image search service
+./stop-service.sh
+
 
 ```
 
