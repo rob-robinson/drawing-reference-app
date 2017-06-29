@@ -40,6 +40,6 @@ curl http://localhost/tag/classic
 - [http://localhost/tag/aladdin](http://localhost/tag/aladdin)
 - [http://localhost/tag/moana](http://localhost/tag/moana)
 - [http://localhost/tag/classic](http://localhost/tag/classic)
-- [http://localhost/tag/Fairly+Odd+Parents](http://localhost/tag/Fairly+Odd+Parents)
+- [http://localhost/tag/Fairly%20Odd%20Parents](http://localhost/tag/Fairly%20Odd%20Parents)
 
 
