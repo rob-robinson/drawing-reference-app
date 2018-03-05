@@ -1,13 +1,11 @@
-# Flask in Docker
 
-Fun local flask api starting point using:
- * Docker
- * Python 3.6
- * Flask
- * MySQL
+# Drawing Reference using Python/Docker/Flask
 
+Fun local drawing reference tool I build for my daughter.
 
-For demonstration purposes only :
+For demonstration purposes only. Images are intentionally blurred to avoid any copyright issues etc... 
+
+## Getting Started
 
 To get a working demo on your desktop, perform the following steps:
 
@@ -16,6 +14,9 @@ To get a working demo on your desktop, perform the following steps:
 git clone https://github.com/rob-robinson/flask-docker.git
 
 cd flask-docker/deployment
+
+# edit start-service.sh to reflect the location that you downloaded this repo to /deployment 
+# : REPO_DIRECTORY=~/Desktop/flask-docker/flask-docker/deployment
 
 chmod 770 start-service.sh
 chmod 770 stop-service.sh
@@ -26,11 +27,9 @@ chmod 770 stop-service.sh
 # some of the data that is available...
 
 curl http://localhost/
-curl http://localhost/jwt
-curl http://localhost/all/<jwt_token>
-curl http://localhost/tag/aladdin
-curl http://localhost/tag/moana
-curl http://localhost/tag/classic
+curl http://localhost/s/aladdin
+curl http://localhost/s/moana
+curl http://localhost/s/classic
 
 # stop image search service
 ./stop-service.sh
@@ -38,9 +37,57 @@ curl http://localhost/tag/classic
 
 ```
 
-- [http://localhost/tag/aladdin](http://localhost/tag/aladdin)
-- [http://localhost/tag/moana](http://localhost/tag/moana)
-- [http://localhost/tag/classic](http://localhost/tag/classic)
-- [http://localhost/tag/Fairly Odd Parents](http://localhost/tag/Fairly%20Odd%20Parents)
+### Prerequisites
 
+* Docker, any modern version should be OK:
+  * [https://www.docker.com/](https://www.docker.com/)
+
+```
+Give examples
+```
+
+### Installing
+
+Use the directions above to get this working locally... this is not for production, so no deployment instructions will be given...
+
+## Running the tests
+
+No tests yet...
+
+### Break down into end to end tests
+
+No tests yet...
+
+### And coding style tests
+
+No tests yet...
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Docker]() - 
+* [Python]() - 
+* [Flask]() - 
+* [Jinja2]() -
+* [MySQL]() -
+
+## Contributing
+
+
+
+## Versioning
+
+
+
+## Authors
+
+* [Rob Robinson](https://github.com/rob-robinson)
+
+## License
+
+
+## Acknowledgments
 

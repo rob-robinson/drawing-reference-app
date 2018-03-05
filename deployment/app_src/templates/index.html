@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <ul class="list-group">
+    {% for n in items %}
+    <li class="list-group-item" >
+      <a href="/s/{{n[0]}}">{{n[0]}}</a> | {{n[1]}}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
