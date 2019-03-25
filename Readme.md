@@ -18,9 +18,6 @@ cd flask-docker/deployment
 # edit start-service.sh to reflect the location that you downloaded this repo to /deployment 
 # : REPO_DIRECTORY=~/Desktop/flask-docker/flask-docker/deployment
 
-chmod 770 start-service.sh
-chmod 770 stop-service.sh
-
 # start image search service
 ./start-service.sh
 
@@ -42,29 +39,9 @@ curl http://localhost/s/classic
 * Docker, any modern version should be OK:
   * [https://www.docker.com/](https://www.docker.com/)
 
-```
-Give examples
-```
-
 ### Installing
 
 Use the directions above to get this working locally... this is not for production, so no deployment instructions will be given...
-
-## Running the tests
-
-No tests yet...
-
-### Break down into end to end tests
-
-No tests yet...
-
-### And coding style tests
-
-No tests yet...
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -74,20 +51,7 @@ Add additional notes about how to deploy this on a live system
 * [Jinja2]() -
 * [MySQL]() -
 
-## Contributing
-
-
-
-## Versioning
-
-
-
 ## Authors
 
 * [Rob Robinson](https://github.com/rob-robinson)
-
-## License
-
-
-## Acknowledgments
 
