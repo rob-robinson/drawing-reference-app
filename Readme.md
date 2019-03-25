@@ -15,7 +15,7 @@ git clone https://github.com/rob-robinson/flask-docker.git
 
 cd flask-docker/deployment
 
-# edit start-service.sh to reflect the location that you downloaded this repo to /deployment 
+# edit start-service.bash to reflect the location that you downloaded this repo to /deployment 
 # : REPO_DIRECTORY=~/Desktop/flask-docker/flask-docker/deployment
 
 # start image search service
