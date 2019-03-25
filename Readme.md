@@ -1,7 +1,7 @@
 
 # Drawing Reference using Python/Docker/Flask
 
-Fun local drawing reference tool I build for my daughter.
+Fun local drawing reference tool I build with my daughter.
 
 For demonstration purposes only. Images are intentionally blurred to avoid any copyright issues etc... 
 
@@ -10,13 +10,9 @@ For demonstration purposes only. Images are intentionally blurred to avoid any c
 To get a working demo on your desktop, perform the following steps:
 
 ```
-
 git clone https://github.com/rob-robinson/flask-docker.git
 
 cd flask-docker/deployment
-
-# edit start-service.bash to reflect the location that you downloaded this repo to /deployment 
-# : REPO_DIRECTORY=~/Desktop/flask-docker/flask-docker/deployment
 
 # start image search service
 ./start-service.bash
@@ -30,8 +26,6 @@ curl http://localhost/s/classic
 
 # stop image search service
 ./stop-service.bash
-
-
 ```
 
 ### Prerequisites

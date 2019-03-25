@@ -43,4 +43,3 @@ docker run \
     --network ${NET_NAME} \
     -d \
     ${APP_IMAGE}
-#    -v ${REPO_DIRECTORY}/app_src/:/app/:ro \

@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-REPO_DIRECTORY=~/Desktop/flask-docker/flask-docker/deployment
-
 SERVICE_PORT=80
 
 DB_IMAGE='image-search-db-image'
