@@ -19,7 +19,7 @@ cd flask-docker/deployment
 # : REPO_DIRECTORY=~/Desktop/flask-docker/flask-docker/deployment
 
 # start image search service
-./start-service.sh
+./start-service.bash
 
 # some of the data that is available...
 
@@ -29,7 +29,7 @@ curl http://localhost/s/moana
 curl http://localhost/s/classic
 
 # stop image search service
-./stop-service.sh
+./stop-service.bash
 
 
 ```
