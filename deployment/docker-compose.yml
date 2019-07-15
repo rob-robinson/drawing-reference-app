@@ -1,0 +1,22 @@
+version: '3'
+services:
+  image-search-app-image:
+    container_name: image-search-app-container
+    image: image-search-app-image
+    build:
+      context: app
+    ports:
+      - "80:5000"
+    networks:
+    - princess-bridge
+  image-search-db-image:
+    container_name: image-search-db-container
+    image: image-search-db-image
+    build:
+      context: db
+    ports:
+    - "3306:3306"
+    networks:
+    - princess-bridge
+networks:
+  princess-bridge:
