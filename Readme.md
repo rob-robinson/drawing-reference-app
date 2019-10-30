@@ -10,7 +10,7 @@ For demonstration purposes only. Images are intentionally blurred to avoid any c
 To get a working demo on your desktop, perform the following steps:
 
 ```
-git clone https://github.com/rob-robinson/flask-docker.git
+git clone https://github.com/rob-robinson/drawing-reference-app.git
 
 cd flask-docker/deployment
 
